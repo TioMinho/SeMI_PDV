@@ -57,7 +57,7 @@ void DataManager::ler(string file)
         else if (tempLinha[i] == '&') {
             info.push_back(aux);						// Passamos o aux para o vector
             tempFrase = "";								// Resetamos a "tempFrase"
-            aux.clear();                                // Resetamos o "aux"
+            aux.clear();
         }
     }
 

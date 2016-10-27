@@ -1,8 +1,13 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include <iostream>
 #include <QMainWindow>
+#include <QPixmap>
+#include <QKeyEvent>
 #include "DataManager.h"
+#include <QMessageBox>
+#include <string>
 
 namespace Ui {
 class MainWindow;
@@ -20,6 +25,11 @@ public:
 private:
     Ui::MainWindow *ui;
     DataManager productList;
+
+    QList<QString> shopItems;
+    QList<float> shopRecipe;
+
+    int state;
 };
 
 #endif // MAINWINDOW_H
