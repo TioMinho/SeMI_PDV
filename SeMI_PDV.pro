@@ -13,9 +13,11 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        MainWindow.cpp
+        MainWindow.cpp \
+    DataManager.cpp
 
-HEADERS  += MainWindow.h
+HEADERS  += MainWindow.h \
+    DataManager.h
 
 FORMS    += MainWindow.ui
 
